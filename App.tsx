@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import LoginForm from './components/LoginForm';
-import Dashboard from './components/Dashboard';
-import { User } from './types';
+import LoginForm from './components/LoginForm.tsx';
+import Dashboard from './components/Dashboard.tsx';
+import { User } from './types.ts';
 
 const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);

@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { getSecurityInsight } from '../services/geminiService';
+import { getSecurityInsight } from '../services/geminiService.ts';
 
 interface LoginFormProps {
   onLogin: (email: string) => void;
@@ -23,7 +23,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    // Simulate API call
+    // Имитация входа
     setTimeout(() => {
       onLogin(email);
       setIsLoading(false);
